@@ -1,0 +1,160 @@
+<!--HTML'de bir tablo oluşturmak için <table> etiketi kullanırız.
+	<tr> etiketi, her tablo satırını tanımlamak için kullanılır .
+	<th> etiketi bir tablo başlığı tanımlar .
+	<td> etiketi ile bir tablo hücresi tanımlanır .
+
+	İşte dört satır ve iki sütunlu basit bir tablo örneği-->
+
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		  <table>
+			 <tr>
+				<th>Day</th>
+				<th>Lesson</th>
+			 </tr>
+			 <tr>
+				<td>Monday</td>
+				<td>Java</td>
+			 </tr>
+			 <tr>
+				<td>Tuesday</td>
+				<td>HTML</td>
+			 </tr>
+			 <tr>
+				<td>Wednesday</td>
+				<td>CSS</td>
+			 </tr>
+		  </table>
+	   </body>
+	</html>
+
+
+<!--Aşağıdaki örnekte olduğu gibi tablo etiketinde border özelliği ile tabloya border ekleyebiliriz .
+    <table border="number">
+
+!!! border niteliği HTML5'te desteklenmez. Bunun yerine CSS kullanın-->
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>Course Program</h1>
+      <table border="1">
+         <tr>
+            <th>Day</th>
+            <th>Lesson</th>
+         </tr>
+         <tr>
+            <td>Monday</td>
+            <td>Java</td>
+         </tr>
+         <tr>
+            <td>Tuesday</td>
+            <td>HTML</td>
+         </tr>
+         <tr>
+            <td>Wednesday</td>
+            <td>CSS</td>
+         </tr>
+      </table>
+   </body>
+</html>
+
+
+<!--Aşağıdaki örnekte olduğu gibi colspan niteliğini kullanarak iki veya daha fazla sütuna yayılabiliriz.
+< td colspan="2" >Java< /td > -->
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>Course Program</h1>
+      <table border="1">
+         <tr>
+            <th>Day</th>
+            <th>Lesson-1</th>
+            <th>Lesson-2</th>
+         </tr>
+         <tr>
+            <td>Monday</td>
+            <td colspan="2">Java</td> 
+         </tr>
+         <tr>
+            <td>Tuesday</td>
+            <td>Maven</td>
+            <td>Gradle</td>
+         </tr>
+         <tr>
+            <td>Wednesday</td>
+            <td>HTML</td>
+            <td>CSS</td>
+         </tr>
+      </table>
+   </body>
+</html>
+
+<!--Aşağıdaki örnekte olduğu gibi rowspan niteliğini kullanarak iki veya daha fazla satıra yayılabiliriz.
+< td rowspan="2" >Java< /td > -->
+
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>Course Program</h1>
+      <table border="1">
+         <tr>
+            <th>Day</th>
+            <th>Lesson-1</th>
+            <th>Lesson-2</th>
+         </tr>
+         <tr>
+            <td>Monday</td>
+            <td>Java</td> 
+            <td>Git</td>
+         </tr>
+         <tr>
+            <td rowspan="2">Tuesday</td>
+            <td>Maven</td>
+            <td>Gradle</td>
+         </tr>
+         <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+         </tr>
+      </table>
+   </body>
+</html>
+
+
+<!--Tablo veya hücre konumunu değiştirmek için etiket veya etiket içindeki align niteliğini kullanabiliriz <td>.
+	<td align="center">java</td > -->
+		
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		  <h1>Course Program</h1>
+		  <table border="1">
+			 <tr>
+				<th>Day</th>
+				<th>Lesson-1</th>
+				<th>Lesson-2</th>
+			 </tr>
+			 <tr>
+				<td>Monday</td>
+				<td align="center" colspan="2" >Java</td> 
+			 </tr>
+			 <tr>
+				<td>Tuesday</td>
+				<td>Maven</td>
+				<td>Gradle</td>
+			 </tr>
+			 <tr>
+				<td>Wednesday</td>
+				<td>HTML</td>
+				<td>CSS</td>
+			 </tr>
+		  </table>
+	   </body>
+	</html>
+
+
+

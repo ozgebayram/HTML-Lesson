@@ -1,0 +1,83 @@
+<!--Kullanıcıdan bilgi toplamak için <form> elementini kullanıyoruz.
+	Bir HTML formu, form öğelerinden oluşur.
+	Giriş öğeleri gibi birçok form öğesi vardır. -->
+
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		  <form> 
+			 <h2>This is a form.</h2>
+		  </form>
+	   </body>
+	</html>
+
+<!-- <form> Her öğe için action niteliği gereklidir . 
+Form gönderildiğinde gerçekleştirilecek eylemi tanımlamak için kullanılır.
+Form verileri sunucudaki bir web sayfasına gö<nderilir -->
+
+	<!DOCTYPE html>
+	<html>
+		<body>
+			<form action="http://www.clarusway.com/action_page.php"> 
+			 <h2>This is a form.</h2>
+			 </form>
+		</body>
+	</html>
+	
+	
+<!--< input type="text" > is used to create a singleline text input.-->
+
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		  <form action="http://www.clarusway.com/action_page.php"> 
+			 <h2>Welcome Clarusway</h2>
+			 Username:<br>
+			 <input type="text" name="username">
+		  </form>
+	   </body>
+	</html>
+
+<!--Her giriş alanı için name niteliği gereklidir.
+	Kullanıcılar bir forma bilgi girdiğinde, bu özniteliğin değeri form kontrolünü tanımlar.
+	name özniteliğinin atlanması durumunda, o giriş alanının verileri gönderilmeyecektir-->
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		  <form action="http://www.clarusway.com/action_page.php"> 
+			 <h2>Welcome Clarusway</h2>
+			 Username:<br>
+			 <input type="text" name="username">
+		  </form>
+	   </body>
+	</html>
+
+	<!--Yöntem Özelliği
+	Method niteliği, form verilerinin sunucuya nasıl gönderileceğini belirlemek için kullanılır.
+	
+	Gönderilen formlar için iki tür yöntem vardır: GET ve POST.
+	
+	Method özniteliği için varsayılan değer GET yöntemidir. Method niteliği atlanırsa, form verileri GET yöntemi kullanılarak gönderilir.
+	
+	GET yöntemi ile form verilerinden gelen değerler sayfa adres alanında görünür olacaktır. Bu nedenle hassas veriler için GET yöntemi kullanılmamalıdır.
+	
+	Form kısa ve hassas değilse GET yöntemini kullanmak idealdir.
+	
+	Formun çok uzun olması ve hassas veriler (örneğin şifreler) içermesi durumunda POST yöntemini kullanmak idealdir.-->
+
+<!--Gönder düğmesi, form verilerini sunucuya göndermek için bir düğme tanımlamak için kullanılır.
+
+Value özelliği, bir düğmede görünen metni belirtmek için kullanılır-->
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <form action="http://www.clarusway.com/action_page.php"> 
+         <h2>Welcome Clarusway</h2>
+         Username:<br>
+         <input type="text" name="username">
+         <input type="submit" value="Submit">
+      </form>
+   </body>
+</html>
+
